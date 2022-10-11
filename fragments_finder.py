@@ -109,7 +109,7 @@ def degenerated_to_regex(site):
 
 nicking_enzimes = {
                     'Nt.BstNBI': {'site':'GAGTCNNNNN', 'nick_pos' : 9},
-                    'Nb.BsrDI ': {'site':'NNCATTGC', 'nick_pos' : 2}
+                    'Nb.BsrDI': {'site':'NNCATTGC', 'nick_pos' : 2}
                     }
 
 
@@ -156,11 +156,13 @@ with open(file) as handle:
                     else:
                         end = len(seq_string) - 1
 
-                    fasta_header = ('>' + org + ' - ' + k +' - '+ str(enz_3) +
-                                    '; start='+ str(start + 1) + ' ; enz_3_pos='+
-                                     str(site_3) + ' ; enz_5_pos='+
-                                      str(start)  +'; end='+ str(end+1) +
-                                     '; size='+  str(end-start))
+                    fasta_header = ('>' + org +
+                                    ' ; sites=' + k +'-'+ str(enz_3) +
+                                    ' ; start='+ str(start + 1) +
+                                    ' ; enz_3_pos='+ str(site_3) +
+                                    ' ; enz_5_pos='+ str(start) +
+                                    ' ; end='+ str(end+1) +
+                                    ' ; size='+  str(end-start))
 
                     fragment_sequence = seq_string[start:end]
 
