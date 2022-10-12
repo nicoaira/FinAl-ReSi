@@ -72,13 +72,13 @@ with open(file) as handle:
         enzimes_combinations[sites]['end'].append(end)
 
 for k, v in enzimes_combinations.items():
-    print(k)
     bed_df = pd.DataFrame(v)
+    print(k)
     print(bed_df)
 
     outfile = 'fragments_' + k + '.bed'
 
-    head = ('track name=' + track + '\t'
+    head = ('track name="' + track + ' - ' + k + '"\t' +
             'description="' + desc + '"' + '\n')
 
     with open(outfile, 'w') as f:
