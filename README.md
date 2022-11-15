@@ -7,9 +7,8 @@ ___
 
 ___
 
-FinAl-ReSi is a pipeline to find  restriction fragments conserved among differnt strains/variants of a particular organism.
-As a proof of concept, we are going to use FinAl-ReSi to find conserved sequences among SARS-CoV-2 variants. Then, these fragments 
-will be used to trigger an EXPAR reaction by the following mechanism:
+FinAl-ReSi is a pipeline to find  restriction sites conserved among differnt strains/variants of a particular organism.
+As a proof of concept, we are going to use FinAl-ReSi to find conserved sequences among SARS-CoV-2 variants. Then, the restriction fragments encolsed by two sites of intereset will be used to trigger an EXPAR reaction by the following mechanism:
 
 <img src="img/double-nick-mech.png" alt="Logo"/>
 
