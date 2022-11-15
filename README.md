@@ -3,8 +3,8 @@
 
 ___
 
+<img src="img/logo.png" alt="Logo" width="200"/>
 
-![alt text](/img/logo.png?raw=true "Logo")
 ___
 
 FinAl-ReSi is a pipeline to find  restriction fragments conserved among differnt strains/variants of a particular organism.
@@ -12,11 +12,17 @@ As a proof of concept, we are going to use FinAl-ReSi to find conserved sequence
 will be used to trigger an EXPAR reaction by the following mechanism:
 
 1- A primer hybridizes to the virus RNA, close to a BstNI site.
+
 2- It has been reported that Bst DNA polymerase 3.0 has RT activity (Bekta¸s et al., 2021). Then, this enzyme would extend this primer, creating the first cDNA.
+
 3- It has been shown that the restriction enzyme BstNI can cut the DNA strand on a DNA:RNA hybrid (https://academic.oup.com/nar/article/48/12/6954/5847776[Kisiala et al., 2020](https://academic.oup.com/nar/article/48/12/6954/5847776). Then, the copied BstNI site will be nicked on the DNA strand of the hybrid.
+
 4- The resulting 3-OH' can now prime a the synthesis of a new cDNA strand. The strand displacement activity of Bst DNA polymerase would displace the cDNA ahead previously copied.
+
 5- The displaced cDNA can now be hybridized by a forward primer, which is upstream from a DNA nicking site (Nt.BstNBI or Nb.BsrDI).
+
 6- The primer is extended and the generated nicking site can be recognized by the nicking enzyme.
+
 7- The 3'-OH generated in the nick can now be used by the Bst DNA polymerase to synthesize and displace the strand ahead. This displaced sequence will be called the Trigger X and I will be use to trigger the EXPAR reaction.
 
 
