@@ -1,5 +1,5 @@
 # FinAl-ReSi
-### Find and Align Restriction Fragments
+### Find and Align Restriction Sites
 
 ___
 
