@@ -46,6 +46,8 @@ In order to fint these fragments, a python script uses a reference genome (in th
 Nt.BstNBI or Nb.BsrDI (nicking sites) on the 5'.
 
 
-To make sure that these fragments are conserved among diferent variants of SARS-CoV-2, we downloaded the 224 representative sequences for each Pangolin lineage/sublineage, retrived from the ([COVID-19 Data Portal by the European Nucleic Archive]https://www.covid19dataportal.org/search/sequences?crossReferencesOption=all&overrideDefaultDomain=true&db=representative-sequences&size=1000). Then, the fragments found on the previous step are serchead against a database with these representative genomes using blastn (ortho_fragments.py). The resulting hits are then aligned with muscle (align_fragments.py), obtaining a MSA of all the aligned fragments that can be used to assess sequence conservation and primer design.
+To make sure that these fragments are conserved among diferent variants of SARS-CoV-2, we downloaded the 224 representative sequences for each Pangolin lineage/sublineage, retrived from the ([COVID-19 Data Portal by the European Nucleic Archive]https://www.covid19dataportal.org/search/sequences?crossReferencesOption=all&overrideDefaultDomain=true&db=representative-sequences&size=1000)). 
+
+Then, the fragments found on the previous step are serchead against a database with these representative genomes using blastn (ortho_fragments.py). The resulting hits are then aligned with muscle (align_fragments.py), obtaining a MSA of all the aligned fragments that can be used to assess sequence conservation and primer design.
 
 Further, makebed.py will make a bed file that can be used to create a custom track to visualize the restriction fragments in a genome browser.
